@@ -246,34 +246,6 @@ ul {
     color: var(--white);
 }
 
-.navbar-logo .globe-icon {
-    transition: transform 0.3s ease;
-}
-
-.navbar-logo:hover .globe-icon {
-    transform: rotate(12deg);
-}
-
-.logo-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.logo-main {
-    font-weight: 700;
-    font-size: 1.125rem;
-    line-height: 1;
-    letter-spacing: 0.05em;
-    color: var(--white);
-}
-
-.logo-sub {
-    font-size: 0.625rem;
-    letter-spacing: 0.2em;
-    font-weight: 500;
-    color: var(--accent);
-}
-
 .nav-links {
     display: none;
     align-items: center;
