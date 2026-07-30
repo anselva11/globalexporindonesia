@@ -246,6 +246,15 @@ ul {
     color: var(--white);
 }
 
+.navbar-logo img {
+    height: 120px;
+    transition: height 0.3s ease;
+}
+
+.navbar.scrolled .navbar-logo img {
+    height: 70px;
+}
+
 .nav-links {
     display: none;
     align-items: center;
@@ -332,7 +341,7 @@ ul {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 12rem;
+    padding-top: 15rem;
     overflow: hidden;
     background-color: var(--primary);
 }
