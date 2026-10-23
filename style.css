@@ -222,7 +222,7 @@ ul {
     width: 100%;
     z-index: 50;
     transition: all 0.3s ease;
-    padding: 1.5rem 0;
+    padding: 0.85rem 0;
     background: transparent;
 }
 
@@ -230,7 +230,7 @@ ul {
     background: rgba(12, 33, 54, 0.95);
     backdrop-filter: blur(12px);
     box-shadow: 0 4px 30px rgba(0,0,0,0.3);
-    padding: 1rem 0;
+    padding: 0.6rem 0;
 }
 
 .navbar-inner {
@@ -247,12 +247,14 @@ ul {
 }
 
 .navbar-logo img {
-    height: 120px;
+    height: 60px;
+    width: auto;
+    object-fit: contain;
     transition: height 0.3s ease;
 }
 
 .navbar.scrolled .navbar-logo img {
-    height: 70px;
+    height: 48px;
 }
 
 .nav-links {
@@ -341,7 +343,8 @@ ul {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 15rem;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
     overflow: hidden;
     background-color: var(--primary);
 }
@@ -462,9 +465,9 @@ ul {
 
 /* Hero Features */
 .hero-features {
-    margin-top: 5rem;
+    margin-top: 2.5rem;
     border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -1410,6 +1413,14 @@ ul {
 .footer-logo {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    height: 80px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .footer-logo .logo-main {
