@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (details) message += `\n*Details:*\n${details}\n`;
 
             const encodedMessage = encodeURIComponent(message);
-            const waURL = `https://wa.me/6285150956644?text=${encodedMessage}`;
+            const waURL = `https://wa.me/6281805886644?text=${encodedMessage}`;
 
             window.open(waURL, '_blank');
         });
