@@ -1649,9 +1649,17 @@ ul {
 
 /* Executive Cards */
 .executive-card-container {
-    display: flex;
-    flex-direction: column;
-    gap: 3.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+}
+
+@media (min-width: 992px) {
+    .executive-card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        align-items: stretch;
+    }
 }
 
 .executive-card {
@@ -1661,6 +1669,9 @@ ul {
     box-shadow: 0 10px 30px -5px rgba(12, 33, 54, 0.07);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .executive-card:hover {
@@ -1670,26 +1681,24 @@ ul {
 }
 
 .executive-card-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-@media (min-width: 992px) {
-    .executive-card-grid {
-        grid-template-columns: 380px 1fr;
-    }
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-grow: 1;
 }
 
 .executive-photo-wrapper {
     position: relative;
     background-color: var(--slate-900);
     overflow: hidden;
-    min-height: 440px;
+    height: 380px;
+    width: 100%;
+    flex-shrink: 0;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .executive-photo-wrapper {
-        min-height: 100%;
+        height: 440px;
     }
 }
 
@@ -1713,14 +1722,14 @@ ul {
 
 .executive-photo-badge {
     position: absolute;
-    bottom: 1.5rem;
-    left: 1.5rem;
-    right: 1.5rem;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    right: 1.25rem;
     background: rgba(12, 33, 54, 0.85);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 0.75rem;
-    padding: 0.875rem 1rem;
+    padding: 0.75rem 1rem;
     color: var(--white);
 }
 
@@ -1733,22 +1742,23 @@ ul {
 }
 
 .executive-photo-badge .badge-tagline {
-    font-size: 0.875rem;
+    font-size: 0.85rem;
     font-weight: 500;
     margin-top: 0.125rem;
     color: rgba(255, 255, 255, 0.9);
 }
 
 .executive-info-body {
-    padding: 2.5rem 2rem;
+    padding: 2.25rem 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex-grow: 1;
+    justify-content: space-between;
 }
 
 @media (min-width: 768px) {
     .executive-info-body {
-        padding: 3rem 2.5rem;
+        padding: 2.5rem 2.25rem;
     }
 }
 
@@ -1857,6 +1867,8 @@ ul {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    margin-top: auto;
+    padding-top: 1rem;
 }
 
 .skill-tag {
