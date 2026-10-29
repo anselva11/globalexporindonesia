@@ -2099,3 +2099,16 @@ ul {
     flex-wrap: wrap;
     gap: 1rem;
 }
+
+/* Dual Service Spotlight Grid */
+.dual-service-banner-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+}
+
+@media (min-width: 768px) {
+    .dual-service-banner-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
