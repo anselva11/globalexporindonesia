@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <!-- Background Gradient for subtle depth -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f4f7fa"/>
+    </linearGradient>
+    
+    <!-- Red Arrow Gradient -->
+    <linearGradient id="arrowGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C5221F"/>
+      <stop offset="100%" stop-color="#EA4335"/>
+    </linearGradient>
+
+    <!-- Globe Gradient -->
+    <radialGradient id="globeGrad" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#e8f4fc"/>
+      <stop offset="70%" stop-color="#cde5f7"/>
+      <stop offset="100%" stop-color="#a8d1f0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Clean rounded squircle container like modern web app tabs -->
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#bgGrad)" stroke="#d9e2ec" stroke-width="2"/>
+
+  <!-- Outer Navy Arc / Crescent (Left & Top framing) -->
+  <path d="M 40 18 A 38 38 0 1 0 20 72" fill="none" stroke="#0C2136" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Globe Body -->
+  <circle cx="50" cy="52" r="32" fill="url(#globeGrad)" stroke="#0C2136" stroke-width="3"/>
+
+  <!-- Globe Latitude Grid Lines -->
+  <ellipse cx="50" cy="52" rx="32" ry="14" fill="none" stroke="#3385C6" stroke-width="2" opacity="0.85"/>
+  <ellipse cx="50" cy="40" rx="28" ry="8" fill="none" stroke="#3385C6" stroke-width="1.6" opacity="0.7"/>
+  <ellipse cx="50" cy="64" rx="28" ry="8" fill="none" stroke="#3385C6" stroke-width="1.6" opacity="0.7"/>
+
+  <!-- Globe Longitude Grid Lines -->
+  <ellipse cx="50" cy="52" rx="14" ry="32" fill="none" stroke="#3385C6" stroke-width="2" opacity="0.85"/>
+  <line x1="50" y1="20" x2="50" y2="84" stroke="#3385C6" stroke-width="2" opacity="0.85"/>
+
+  <!-- Continents Silhouettes on Globe (Stylized East Asia, SE Asia, Australia) -->
+  <path d="M 40 34 Q 45 32 48 37 Q 54 36 56 42 Q 52 46 46 44 Z" fill="#3385C6" opacity="0.4"/>
+  <path d="M 42 54 Q 46 52 50 54 Q 48 58 43 57 Z" fill="#3385C6" opacity="0.5"/>
+  <path d="M 54 62 Q 62 60 64 66 Q 60 72 52 68 Z" fill="#3385C6" opacity="0.45"/>
+
+  <!-- Red Dynamic Swoosh Arrow curving across globe -->
+  <path d="M 18 80 C 22 92, 44 94, 62 82 C 78 72, 86 54, 96 36" fill="none" stroke="url(#arrowGrad)" stroke-width="7" stroke-linecap="round"/>
+  <!-- Arrow Head pointing up-right -->
+  <polygon points="96,24 105,40 88,38" fill="#EA4335"/>
+
+  <!-- Container Cargo Ship at bottom -->
+  <!-- Containers on deck -->
+  <rect x="36" y="72" width="7" height="6" fill="#EA4335" rx="1"/>
+  <rect x="44" y="72" width="7" height="6" fill="#0C2136" rx="1"/>
+  <rect x="52" y="72" width="7" height="6" fill="#3385C6" rx="1"/>
+  <rect x="60" y="72" width="7" height="6" fill="#EA4335" rx="1"/>
+  <rect x="40" y="66" width="7" height="6" fill="#0C2136" rx="1"/>
+  <rect x="48" y="66" width="7" height="6" fill="#EA4335" rx="1"/>
+  <rect x="56" y="66" width="7" height="6" fill="#3385C6" rx="1"/>
+
+  <!-- Ship Hull -->
+  <path d="M 30 78 L 74 78 L 86 82 L 80 87 L 34 87 Z" fill="#0C2136"/>
+
+  <!-- White water wave under ship hull -->
+  <path d="M 28 89 Q 42 86 56 89 Q 70 92 84 89" fill="none" stroke="#3385C6" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
+

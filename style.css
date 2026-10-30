@@ -1,5 +1,4 @@
-/* ==========================================
-   Global Expor Indonesia - Complete CSS
+/* ===================================   Global Expor Indonesia - Complete CSS
    Pure CSS (no Tailwind) - GitHub Pages Ready
    ========================================== */
 
@@ -214,8 +213,7 @@ ul {
     transform: translate(0, 0) scale(1) !important;
 }
 
-/* ==========================================
-   NAVBAR
+/* ===================================   NAVBAR
    ========================================== */
 .navbar {
     position: fixed;
@@ -335,8 +333,7 @@ ul {
     }
 }
 
-/* ==========================================
-   HERO SECTION
+/* ===================================   HERO SECTION
    ========================================== */
 .hero-section {
     position: relative;
@@ -511,8 +508,7 @@ ul {
     font-size: 0.875rem;
 }
 
-/* ==========================================
-   ABOUT SECTION
+/* ===================================   ABOUT SECTION
    ========================================== */
 .about-grid {
     display: grid;
@@ -631,8 +627,7 @@ ul {
     margin-bottom: 0;
 }
 
-/* ==========================================
-   PRODUCTS SECTION
+/* ===================================   PRODUCTS SECTION
    ========================================== */
 .products-grid {
     display: grid;
@@ -758,8 +753,7 @@ ul {
     color: var(--accent-hover);
 }
 
-/* ==========================================
-   WHY US SECTION
+/* ===================================   WHY US SECTION
    ========================================== */
 .reasons-grid {
     display: grid;
@@ -817,8 +811,7 @@ ul {
     line-height: 1.7;
 }
 
-/* ==========================================
-   MARKETS SECTION
+/* ===================================   MARKETS SECTION
    ========================================== */
 .markets-section {
     position: relative;
@@ -957,8 +950,7 @@ ul {
     font-size: 0.875rem;
 }
 
-/* ==========================================
-   QUALITY SECTION
+/* ===================================   QUALITY SECTION
    ========================================== */
 .quality-assurance {
     border-top: 1px solid var(--slate-100);
@@ -1074,8 +1066,7 @@ ul {
     font-size: 0.875rem;
 }
 
-/* ==========================================
-   GALLERY SECTION
+/* ===================================   GALLERY SECTION
    ========================================== */
 .gallery-grid {
     display: grid;
@@ -1140,8 +1131,7 @@ ul {
     text-overflow: ellipsis;
 }
 
-/* ==========================================
-   FAQ SECTION
+/* ===================================   FAQ SECTION
    ========================================== */
 .faq-list {
     display: flex;
@@ -1217,8 +1207,7 @@ ul {
     padding-top: 1rem;
 }
 
-/* ==========================================
-   CONTACT SECTION
+/* ===================================   CONTACT SECTION
    ========================================== */
 .contact-grid {
     display: grid;
@@ -1380,8 +1369,7 @@ ul {
     margin-top: 1rem;
 }
 
-/* ==========================================
-   FOOTER
+/* ===================================   FOOTER
    ========================================== */
 .footer {
     background: var(--primary);
@@ -1488,8 +1476,7 @@ ul {
     color: var(--white);
 }
 
-/* ==========================================
-   FLOATING WHATSAPP
+/* ===================================   FLOATING WHATSAPP
    ========================================== */
 .floating-whatsapp {
     position: fixed;
@@ -1526,16 +1513,14 @@ ul {
     }
 }
 
-/* ==========================================
-   ACTIVE NAV LINK
+/* ===================================   ACTIVE NAV LINK
    ========================================== */
 .nav-links a.active {
     color: var(--accent);
     font-weight: 600;
 }
 
-/* ==========================================
-   LEADERSHIP & EXECUTIVE STYLES
+/* ===================================   LEADERSHIP & EXECUTIVE STYLES
    ========================================== */
 .subpage-hero {
     position: relative;
@@ -2112,3 +2097,569 @@ ul {
         grid-template-columns: repeat(2, 1fr) !important;
     }
 }
+
+/* ===================================   JASA IMPORT & FREIGHT FORWARDING STYLES
+   ========================================== */
+
+/* Subpage Hero modifications & badges */
+.hero-tag-import {
+    background: rgba(51, 133, 198, 0.18);
+    border: 1px solid rgba(51, 133, 198, 0.4);
+    color: #64b5f6;
+    padding: 0.35rem 0.85rem;
+    border-radius: 9999px;
+    font-size: 0.775rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+/* Import Stats Ribbon */
+.import-stats-ribbon {
+    background: var(--white);
+    border-radius: 1.25rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 10px 35px -10px rgba(12, 33, 54, 0.08);
+    border: 1px solid var(--slate-200);
+    margin-top: -3rem;
+    position: relative;
+    z-index: 20;
+}
+
+.import-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .import-stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+}
+
+.import-stat-item {
+    text-align: center;
+    border-right: 1px solid var(--slate-200);
+}
+
+.import-stat-item:last-child {
+    border-right: none;
+}
+
+@media (max-width: 767px) {
+    .import-stat-item:nth-child(2) {
+        border-right: none;
+    }
+}
+
+.import-stat-num {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1.1;
+    margin-bottom: 0.25rem;
+}
+
+.import-stat-label {
+    font-size: 0.825rem;
+    color: var(--slate-600);
+    font-weight: 500;
+}
+
+/* Import Services Grid */
+.import-services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .import-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .import-services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.import-service-card {
+    background: var(--white);
+    border: 1px solid var(--slate-200);
+    border-radius: 1.25rem;
+    padding: 2.25rem 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.import-service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent) 0%, #60a5fa 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.import-service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px -10px rgba(12, 33, 54, 0.12);
+    border-color: rgba(51, 133, 198, 0.4);
+}
+
+.import-service-card:hover::before {
+    opacity: 1;
+}
+
+.import-service-card.featured {
+    border-color: var(--accent);
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbfe 100%);
+    box-shadow: 0 12px 30px -5px rgba(51, 133, 198, 0.15);
+}
+
+.import-service-card.featured::before {
+    opacity: 1;
+}
+
+.card-top-badge {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    background: rgba(51, 133, 198, 0.12);
+    color: var(--accent);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.3rem 0.65rem;
+    border-radius: 9999px;
+}
+
+.import-service-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 1rem;
+    background: rgba(51, 133, 198, 0.1);
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.import-service-card:hover .import-service-icon {
+    background: var(--accent);
+    color: var(--white);
+}
+
+.import-service-card h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+}
+
+.import-service-card p {
+    color: var(--slate-600);
+    font-size: 0.925rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.import-service-features {
+    list-style: none;
+    margin-bottom: 1.75rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--slate-100);
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.import-service-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625rem;
+    font-size: 0.85rem;
+    color: var(--slate-700);
+    line-height: 1.4;
+}
+
+.import-service-features li svg {
+    flex-shrink: 0;
+    color: var(--accent);
+    margin-top: 2px;
+}
+
+.import-service-action {
+    margin-top: auto;
+}
+
+.btn-service-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid var(--slate-300);
+    border-radius: 0.75rem;
+    color: var(--primary);
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.import-service-card:hover .btn-service-outline,
+.import-service-card.featured .btn-service-outline {
+    background: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+}
+
+/* Comparison Table */
+.comparison-container {
+    background: var(--white);
+    border-radius: 1.25rem;
+    border: 1px solid var(--slate-200);
+    padding: 2rem 1.5rem;
+    box-shadow: 0 10px 30px -5px rgba(12, 33, 54, 0.05);
+    margin-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .comparison-container {
+        padding: 2.5rem;
+    }
+}
+
+.comparison-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.comparison-table {
+    width: 100%;
+    min-width: 680px;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: left;
+}
+
+.comparison-table th {
+    padding: 1.125rem 1rem;
+    background: var(--slate-50);
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 0.925rem;
+    border-bottom: 2px solid var(--slate-200);
+}
+
+.comparison-table th.col-highlight {
+    background: rgba(51, 133, 198, 0.1);
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+.comparison-table td {
+    padding: 1.125rem 1rem;
+    border-bottom: 1px solid var(--slate-200);
+    font-size: 0.875rem;
+    color: var(--slate-700);
+    vertical-align: middle;
+}
+
+.comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
+.comparison-table td.col-highlight {
+    background: rgba(51, 133, 198, 0.03);
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.badge-tag-yes {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: #059669;
+    background: #d1fae5;
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    font-size: 0.775rem;
+    font-weight: 600;
+}
+
+.badge-tag-no {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: #b91c1c;
+    background: #fee2e2;
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    font-size: 0.775rem;
+    font-weight: 600;
+}
+
+.badge-tag-info {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--accent);
+    background: rgba(51, 133, 198, 0.1);
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    font-size: 0.775rem;
+    font-weight: 600;
+}
+
+/* Popular Routes Section */
+.routes-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+@media (min-width: 640px) {
+    .routes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .routes-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.route-card {
+    background: var(--white);
+    border: 1px solid var(--slate-200);
+    border-radius: 1rem;
+    padding: 1.75rem 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.route-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px -6px rgba(12, 33, 54, 0.1);
+    border-color: var(--accent);
+}
+
+.route-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.route-country {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.route-flag {
+    font-size: 1.75rem;
+    line-height: 1;
+}
+
+.route-country h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.route-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    background: var(--slate-100);
+    color: var(--slate-700);
+}
+
+.route-card p {
+    font-size: 0.85rem;
+    color: var(--slate-600);
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+}
+
+.route-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 1rem;
+    border-top: 1px dashed var(--slate-200);
+    font-size: 0.8125rem;
+}
+
+.route-meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.route-meta-label {
+    color: var(--slate-500);
+}
+
+.route-meta-value {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* Workflow Steps */
+.workflow-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 640px) {
+    .workflow-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .workflow-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.workflow-card {
+    background: var(--white);
+    border: 1px solid var(--slate-200);
+    border-radius: 1.25rem;
+    padding: 2rem 1.75rem;
+    position: relative;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.workflow-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px -8px rgba(12, 33, 54, 0.08);
+}
+
+.workflow-num {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: rgba(51, 133, 198, 0.25);
+    line-height: 1;
+    margin-bottom: 0.75rem;
+}
+
+.workflow-card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.625rem;
+}
+
+.workflow-card p {
+    font-size: 0.875rem;
+    color: var(--slate-600);
+    line-height: 1.6;
+}
+
+/* Import Quote Form Card */
+.import-inquiry-box {
+    background: var(--white);
+    border-radius: 1.5rem;
+    border: 1px solid var(--slate-200);
+    padding: 2.5rem 2rem;
+    box-shadow: 0 15px 40px -10px rgba(12, 33, 54, 0.08);
+}
+
+@media (min-width: 768px) {
+    .import-inquiry-box {
+        padding: 3.5rem 3rem;
+    }
+}
+
+/* Cross-page banner in index.html */
+.import-promo-banner {
+    background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+    border-radius: 1.25rem;
+    padding: 2.5rem 2rem;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    margin-top: 3.5rem;
+    box-shadow: 0 15px 35px -5px rgba(12, 33, 54, 0.15);
+}
+
+@media (min-width: 768px) {
+    .import-promo-banner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3rem;
+    }
+}
+
+.import-promo-banner::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(51, 133, 198, 0.3) 0%, transparent 70%);
+    top: -100px;
+    right: -50px;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.import-promo-content {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+}
+
+.import-promo-content h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.import-promo-content p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+}
+
+.import-promo-action {
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
