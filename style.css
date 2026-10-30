@@ -235,7 +235,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .navbar-logo {
@@ -243,7 +243,7 @@ ul {
     align-items: center;
     gap: 0.5rem;
     color: var(--white);
-    margin-right: 2.5rem;
+    margin-right: 1.5rem;
     flex-shrink: 0;
 }
 
@@ -261,18 +261,27 @@ ul {
 .nav-links {
     display: none;
     align-items: center;
-    gap: 1.15rem;
+    gap: 0.6rem;
+    flex-wrap: nowrap;
 }
 
 @media (min-width: 1280px) {
     .nav-links {
-        gap: 1.5rem;
+        gap: 1rem;
+    }
+}
+@media (min-width: 1440px) {
+    .nav-links {
+        gap: 1.25rem;
+    }
+    .nav-links a {
+        font-size: 0.875rem;
     }
 }
 
 .nav-links a {
     color: rgba(255,255,255,0.8);
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     font-weight: 500;
     transition: color 0.2s ease;
     white-space: nowrap;
